@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pytest-fastapi"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "pytest_fastapi"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+hypothesis = "^6.87.3"
+fastapi = {extras = ["all"], version = "^0.103.2"}
+pytest = "^7.4.2"
+pyclean = "^2.7.5"
+selenium = "^4.14.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
